@@ -1,0 +1,52 @@
+context:
+  name: "My Custom Context"
+  version: "1.0"
+  type: "custom"  # Options: industry, solution, role, custom
+
+  description: |
+    Brief description of what this context is for and when to use it.
+    Example: "Optimizes prompts for healthcare applications with HIPAA compliance."
+
+  # Industry-specific information (optional)
+  industry_specifics:
+    domain: "Your Industry"
+    compliance: ["Regulation 1", "Regulation 2"]
+    terminology:
+      - key_term: "Definition or usage guideline"
+      - another_term: "How to use this term appropriately"
+
+  # Default prompt settings (optional)
+  prompt_defaults:
+    tone: "professional"  # e.g., professional, casual, academic, friendly
+    safety_level: "medium"  # low, medium, high
+    validation: "standard"  # what validation to apply
+
+  # Additional checks the analyzer should perform (optional)
+  additional_checks:
+    - "Check for specific requirement 1"
+    - "Check for specific requirement 2"
+    - "Check for specific requirement 3"
+
+  # Example prompt patterns for this context (optional)
+  example_patterns:
+    - name: "Pattern Name"
+      description: "What this pattern is for"
+      template: |
+        Your template prompt structure here.
+        Use {placeholders} for dynamic content.
+
+    - name: "Another Pattern"
+      description: "Another use case"
+      template: |
+        Another template structure.
+
+  # Keywords that should be emphasized in this context (optional)
+  keywords:
+    - "important keyword 1"
+    - "important keyword 2"
+
+  # Best practices specific to this context (optional)
+  best_practices:
+    - "Best practice 1 for this context"
+    - "Best practice 2 for this context"
+    - "Best practice 3 for this context"

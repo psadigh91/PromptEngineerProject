@@ -1,0 +1,68 @@
+context:
+  name: "Healthcare"
+  version: "1.0"
+  type: "industry"
+
+  description: |
+    Optimizes prompts for healthcare applications with emphasis on
+    patient privacy, clinical accuracy, and regulatory compliance.
+
+  industry_specifics:
+    domain: "Healthcare & Medical"
+    compliance: ["HIPAA", "GDPR", "FDA 21 CFR Part 11"]
+    terminology:
+      - clinical: "Use accurate medical terminology, avoid jargon for patient-facing content"
+      - patient_data: "Always emphasize privacy, consent, and data protection"
+      - diagnosis: "Include disclaimers that AI is not a substitute for professional medical advice"
+
+  prompt_defaults:
+    tone: "professional, empathetic, accurate"
+    safety_level: "high"
+    validation: "require medical fact-checking"
+
+  additional_checks:
+    - "Medical accuracy verification"
+    - "HIPAA compliance screening"
+    - "Patient safety considerations"
+    - "Disclaimer presence for medical advice"
+
+  example_patterns:
+    - name: "Clinical Documentation"
+      description: "Generate clinical notes or documentation"
+      template: |
+        You are a healthcare documentation specialist.
+
+        Generate accurate clinical documentation for:
+        {patient_scenario}
+
+        Requirements:
+        - Use standard medical terminology
+        - Follow SOAP note format
+        - Ensure HIPAA compliance
+        - Include all relevant details
+
+    - name: "Patient Communication"
+      description: "Communicate complex medical information to patients"
+      template: |
+        You are a patient educator explaining medical concepts clearly.
+
+        Explain the following to a patient in simple terms:
+        {medical_concept}
+
+        Requirements:
+        - Use plain language
+        - Be empathetic and supportive
+        - Avoid medical jargon
+        - Include actionable next steps
+
+  keywords:
+    - "HIPAA"
+    - "patient privacy"
+    - "clinical accuracy"
+    - "medical disclaimer"
+
+  best_practices:
+    - "Always include medical disclaimer for diagnostic content"
+    - "Verify clinical accuracy with current medical guidelines"
+    - "Protect patient privacy in all scenarios"
+    - "Use empathetic tone for patient-facing content"

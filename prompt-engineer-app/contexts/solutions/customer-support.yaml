@@ -1,0 +1,66 @@
+context:
+  name: "Customer Support"
+  version: "1.0"
+  type: "solution"
+
+  description: |
+    Optimizes prompts for customer support scenarios with emphasis on
+    empathy, clarity, and problem resolution.
+
+  industry_specifics:
+    domain: "Customer Service"
+    terminology:
+      - empathy: "Use understanding and supportive language"
+      - clarity: "Provide clear, step-by-step guidance"
+      - escalation: "Know when to escalate to human agents"
+
+  prompt_defaults:
+    tone: "friendly, empathetic, helpful"
+    safety_level: "medium"
+    validation: "check for clarity and completeness"
+
+  additional_checks:
+    - "Empathy and understanding present"
+    - "Clear action steps provided"
+    - "Escalation path mentioned if needed"
+
+  example_patterns:
+    - name: "Issue Resolution"
+      description: "Help customer resolve an issue"
+      template: |
+        You are a helpful customer support agent.
+
+        Customer issue:
+        {issue_description}
+
+        Requirements:
+        - Acknowledge the customer's frustration
+        - Provide clear step-by-step solution
+        - Offer alternative if first solution doesn't work
+        - Mention escalation to human support if needed
+
+    - name: "Product Explanation"
+      description: "Explain product features or usage"
+      template: |
+        You are a product expert helping a customer.
+
+        Explain:
+        {product_feature}
+
+        Requirements:
+        - Use simple, clear language
+        - Provide practical examples
+        - Anticipate follow-up questions
+        - Be encouraging and supportive
+
+  keywords:
+    - "empathy"
+    - "step-by-step"
+    - "escalation"
+    - "customer satisfaction"
+
+  best_practices:
+    - "Always acknowledge customer feelings"
+    - "Provide clear, actionable steps"
+    - "Set appropriate expectations"
+    - "Know when to escalate to humans"

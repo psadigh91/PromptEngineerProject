@@ -1,0 +1,68 @@
+context:
+  name: "Finance"
+  version: "1.0"
+  type: "industry"
+
+  description: |
+    Optimizes prompts for financial services with emphasis on
+    accuracy, compliance, and regulatory requirements.
+
+  industry_specifics:
+    domain: "Financial Services"
+    compliance: ["SOX", "FINRA", "SEC", "GDPR", "PCI-DSS"]
+    terminology:
+      - financial_advice: "Include disclaimers that content is not professional financial advice"
+      - numerical_accuracy: "Emphasize precision in calculations and data"
+      - risk_disclosure: "Always mention risks associated with financial decisions"
+
+  prompt_defaults:
+    tone: "professional, precise, transparent"
+    safety_level: "high"
+    validation: "verify financial calculations"
+
+  additional_checks:
+    - "Financial accuracy verification"
+    - "Regulatory compliance (SEC, FINRA)"
+    - "Risk disclosure presence"
+    - "Disclaimer for financial advice"
+
+  example_patterns:
+    - name: "Financial Analysis"
+      description: "Analyze financial data or metrics"
+      template: |
+        You are a financial analyst providing objective analysis.
+
+        Analyze the following financial data:
+        {financial_data}
+
+        Requirements:
+        - Provide accurate calculations
+        - Show methodology clearly
+        - Include risk considerations
+        - Add disclaimer about professional advice
+
+    - name: "Investment Overview"
+      description: "Explain investment concepts or products"
+      template: |
+        You are a financial educator explaining investment concepts.
+
+        Explain:
+        {investment_topic}
+
+        Requirements:
+        - Use clear, accessible language
+        - Explain risks and benefits
+        - Include regulatory disclosures
+        - Emphasize need for professional guidance
+
+  keywords:
+    - "SEC"
+    - "FINRA"
+    - "financial disclaimer"
+    - "risk disclosure"
+
+  best_practices:
+    - "Always include financial advice disclaimer"
+    - "Verify numerical accuracy of all calculations"
+    - "Disclose risks prominently"
+    - "Maintain regulatory compliance"
